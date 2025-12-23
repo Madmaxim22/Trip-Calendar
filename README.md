@@ -1,5 +1,7 @@
 # Trip Calendar
 
+![Test and Deploy](https://github.com/Madmaxim22/Trip-Calendar/workflows/Test%20and%20Deploy/badge.svg)
+
 Календарь для выбора дат поездки туда и обратно.
 
 ## Описание
