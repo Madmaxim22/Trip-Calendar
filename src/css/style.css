@@ -1,0 +1,132 @@
+.calendar-widget {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.trip-type {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.date-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.date-input {
+  position: relative;
+}
+
+.date-input label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.date-input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.calendar-popup {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  z-index: 1000;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: none;
+  width: 300px;
+  margin-top: 5px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.calendar-header button {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.calendar-header button:hover {
+  background: #e0e0e0;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.weekday {
+  text-align: center;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 14px;
+ color: #666;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  padding: 5px;
+}
+
+.calendar-day {
+  text-align: center;
+  padding: 10px 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  position: relative;
+}
+
+.calendar-day:hover:not(.disabled) {
+ background-color: #f0f0f0;
+}
+
+.calendar-day.selected {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.calendar-day.today {
+  border: 2px solid #2196F3;
+}
+
+.calendar-day.disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.calendar-day.empty {
+  cursor: default;
+  background-color: transparent;
+}
+
+.calendar-day.empty:hover {
+  background-color: transparent;
+}

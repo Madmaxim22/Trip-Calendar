@@ -6,6 +6,24 @@
   <title>TRIP-CALENDAR</title>
 </head>
 <body>
-  
+  <div class="calendar-widget">
+    <div class="trip-type">
+      <label>
+        <input type="checkbox" id="roundtrip" checked> Туда и обратно
+      </label>
+    </div>
+    <div class="date-inputs">
+      <div class="date-input">
+        <label for="departure-date">Туда:</label>
+        <input type="text" id="departure-date" readonly>
+        <div class="calendar-popup" id="departure-calendar"></div>
+      </div>
+      <div class="date-input" id="return-date-container">
+        <label for="return-date">Обратно:</label>
+        <input type="text" id="return-date" readonly>
+        <div class="calendar-popup" id="return-calendar"></div>
+      </div>
+    </div>
+  <script src="index.js"></script>
 </body>
 </html>
